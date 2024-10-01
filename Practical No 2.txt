@@ -1,0 +1,91 @@
+PRACTICAL NO: 02
+AIM: MongoDB inert document, query document, update document, delete document. 
+Basic Commands 
+1. Version check 
+Syntax: mongod -version 
+
+2. Listing MongoDB commands 
+Syntax:help() 
+
+ 
+3. DB statistics Syntax: db.stats()  
+ 	 
+ 
+ 
+ 
+ 
+ 
+4. Update Document in a Collection 
+Syntax: collectionName.update({KeyToUpdate},{Set Command}), db.collection.update({criteria},{$set: {new value}}) 
+
+Syntax: collectionName.updateMany({filter},{Set Command}) 
+
+6. Delete Document of a Collection 
+• 	deleteOne({condition}): removes the single document meeting the deletion criteria.  Syntax: collectionName.deleteOne({DeletionCondition}) 
+
+ 
+7. remove()  
+Syntax: collectionName.remove({DeletionCondition},1) 
+ 	
+8. Retrieve Distinct 
+• To get distinct records from one field. 	 
+Syntax: collectionName.distinct(field) 
+
+• To get distinct records from one field while specifying the query. 
+• Syntax: collectionName.distinct(field, query) 
+ 
+ 	
+9. Rename collection 
+Syntax: collectionName.renameCollection(newCollectionName) 
+
+Queries 
+1. Write a MongoDB query to display all the documents in the collection employee. 
+2. Write a MongoDB query to display the fields employee_id, name, department, and salary for all the documents in the collection employee. 
+db.Employee.insertMany([{ename:"Paras",eid:01,dptname:"Cs",salary:25000},     {ename:"Sanket",eid:02,dptname:"IT",salary:13000}, 
+    {ename:"Sai ",eid:03,dptname:"HR",salary:15000}, 
+    {ename:"Sangram",eid:04,dptname:"CS",salary:25000}, 
+	    {ename:"Omkar",eid:05,dptname:"IT",salary:10000}, 	 
+    {ename:"Ketan",eid:06,dptname:"HR",salary:15000}, 
+    {ename:"Saif",eid:07,dptname:"CS",salary:25000}, 
+    { ename:"Sujal",eid:08,dptname:"CS",salary:15000}, 
+    {ename:"Hemant",eid:09,dptname:"IT",salary:25000}, 
+    {ename:"Ram",eid:10,dptname:"CS",salary:20000}]) 
+
+3.Write a MongoDB query to display the fields employee_id, name, department, but exclude the field _id for all the documents in the collection employee. 
+db.employee.find({},{ename:1,eid:1,dptname:1,_id:0}) 
+
+4.Write a MongoDB query to display all the employee which are in the  "IT" department 
+.db.employee.find({department:"IT"}) 
+
+5.Write a MongoDB query to set salary of the employee to 50,000 for employees which are in "HR" department . 
+db.employee.updateMany({dptname:"HR"},{$set:{salary:50000}}) 
+
+ 
+ 
+ 
+ 
+6.Write a MongoDB query to set price 10 for the products whose quantity is greater then 50. db.product.updateMany({quantity:{$gt:50}},{$set:{price:10}}) 
+
+7.Write a MongoDB query to remove the record of any one product. 
+db.product.remove({pname:"bag"}) 
+8.Write a MongoDB query to rename  product collection as Product_details. 
+db.product.renameCollection("product_details") 
+
+Name: Sangram Ghorpade  	 	 	Rollno:248624 
+ 
+
+Name : Pawan Singh 00Roll No : 248737
+ 
+
+ 
+Mulund College Of Commerce 	 	 	Big Data NoSql 
+
+ 
+Mulund College Of Commerce 	 	 	Big Data NoSql 
+
+Name: Sangram Ghorpade  	 	 	Rollno:248624 
+ 
+
+ 
+Mulund College Of Commerce 	 	 	Big Data NoSql 
+

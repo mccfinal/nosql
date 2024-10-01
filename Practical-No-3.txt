@@ -1,0 +1,46 @@
+Practical No : 03
+Aim : Mongodb Basic Queries With Conditions
+1. Create A Sample Collection Orders.
+i. Customer (Name)
+ii. Address ("City", "Country")
+iii. Paymentmode (Cash,Card, Netbanking,Upi)
+iv. Email
+v. Ordertotal
+vi. Orderitems ("Itemname", "Price", "Qty")
+
+2. Write a query to display all documents from MongoDB orders collections.
+3. Write a query to display the order where PaymentMode is 'Card'
+
+4. Write a query to display the order where Country is 'India' (you can use a dot notation).
+
+5. Write a query to display the order where Item Name is 'NoteBook'.
+
+6. Write a query to display the documents where OrderTotal is greater than 500
+7. Write a query to display the documents where OrderTotal is greater than or equal to 500.
+
+8. Write a query to display the documents where OrderTotal is less than 900.
+
+9. Write a query to display the documents where OrderTotal is less than or equal to 900.
+
+10. Write a query to display the order where PaymentMode is not 'Cash'  
+
+11. Write a query to display Write a query to display the order where Item Name is 'NoteBook' or 'Assignment Papers' or 'pen'
+
+12. Write a query to display the order where Item Name is not 'NoteBook' or 'Assignment Papers' 
+
+13. Write a query to display the order where city is Mumbai and Item Name is 'NoteBook' 
+
+14. Write a query to display the order where OrderTotal  is 600 or price is 200
+
+15. Write a query to display the order where OrderTotal  is not equal to 600 
+
+16. Write a query to display the order where city is not Mumbai and Item Name is not 'NoteBook' 
+
+
+
+
+
+Name: Arya More  	 	 	Rollno:248664
+
+Mulund College Of Commerce (Autonomous)                                                                        Big Data NoSQL
+

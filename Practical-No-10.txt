@@ -1,0 +1,57 @@
+Practical No - 10
+Aim: Perform backup and restore databases in MongoDB
+
+a) Backup and restore of All the databases:
+
+Step 1: To create the backup files of databases.
+
+
+Step 2: Switch to the databases and delete all.
+
+
+Step 3: To restore all the deleted databases.
+
+
+Step 4: Check the results. 
+
+
+
+b) Backup and restore a single the database:
+
+Step 1: Delete the dump folder created in bin directory of Mongodb.
+
+
+Step 2: Delete one of the databases.
+
+
+Step 3: Restoring the deleted database.
+
+
+Step 4: Check the result.
+
+
+
+
+
+
+
+c) Backup and restore a single collection:
+
+Step 1: To back up the collection.
+
+
+Step 2: Check the result in Bin folder.
+
+
+Step 3: To restore, delete the collection.
+
+
+Step 4: To restore the deleted collection.
+
+
+Step 5: Check the collection.
+	
+Name: St00Roll No: RN
+
+Mulund College of Commerce (Autonomous) 00Big Data NoSQL
+

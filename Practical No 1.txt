@@ -1,0 +1,83 @@
+﻿PRACTICAL NO: 01 
+AIM: Create MongoDB database, collection, insert records into collections, delete collections. 
+1.Create New DB or Switch to Existing DB 
+Syntax: use DB_Name 
+ 
+
+ 
+2.Listing all the Databases 
+Syntax: show dbs 
+ 
+ 
+ 
+
+3. Check the DB currently in use 
+Syntax: db 
+ 
+
+4.Drop Database 
+Syntax:db.dropDatabase() 
+ 
+ 
+
+5.Create Collection 
+Creating a simple collection. 
+Syntax: db.createCollection(Name,Options) 
+ 
+ 
+
+6.Creating a Capped Collection 
+Syntax: db.createCollection(Name,{capped : true, size : sizeLimit , max : documentLimit }) 
+ 
+
+ 
+7.Drop Collection 
+Syntax: db.collectionName.drop() 
+ 
+ 
+
+8.Insert Document into Collection 
+Inserting a single record 
+Syntax: db.collectionName.insertOne([{document1}) 
+ 
+ 
+ 
+
+	• 	Inserting multiple records 
+Syntax: Db.collectionName.insertMany([{document1},{document2},{ document3}….{ documentn}])4 
+
+ 
+9.Retrieve Document from a Collection 
+Syntax:db.collection.find() 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Retrieval output 
+Syntax: collectionName.find().pretty() 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
